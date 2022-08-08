@@ -138,3 +138,31 @@ footer{
     font-size:13px;
     font-weight:bold;
 }
+
+/* Tablets y phablets */
+@media only screen and (min-width: 576px) and (max-width: 767px){
+    main{
+        flex-direction: column;
+    }
+    .default{
+        display: none;
+    }
+}
+
+/* Teléfonos */
+@media only screen and (max-width: 575px){
+    main{
+        flex-direction: column;
+    }
+    .encriptador {
+        width: 90%;
+        margin:20px;
+    }
+    .visualizador{
+        width: 100%;
+        margin: 20px;
+    }
+    .default{
+        display: none;
+    }
+}
