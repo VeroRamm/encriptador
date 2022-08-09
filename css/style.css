@@ -153,6 +153,7 @@ footer{
 @media only screen and (max-width: 575px){
     main{
         flex-direction: column;
+        min-height: 100vh;
     }
     .encriptador {
         width: 90%;
