@@ -34,7 +34,16 @@ function desencriptar(){
    
 }
 function copiar(){
- let txtCopiar = document.querySelector("#lectura");
- txtCopiar.select();
- document.execCommand("copy");
+ let txtCopiar = document.querySelector("#lectura").value;
+ 
+ navigator.clipboard.writeText(txtCopiar)
+ .then(() => {
+     console.log('Text copied to clipboard');
+ })
+ .catch(err => {
+     console.error('Error in copying text: ', err);
+ });
+
+
+
 }
