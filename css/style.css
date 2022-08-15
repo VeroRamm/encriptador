@@ -15,6 +15,7 @@ body{
 main{
     display:flex;
     flex-direction: row;
+    margin-bottom: 50px;
 }
 
 .logo{
@@ -134,7 +135,7 @@ h1{
 }
 footer{
     text-align: center;
-    margin-top: 40px;
+    margin-bottom: 10%;
     font-size:13px;
     font-weight:bold;
 }
@@ -143,6 +144,9 @@ footer{
 @media only screen and (min-width: 576px) and (max-width: 767px){
     main{
         flex-direction: column;
+    }
+    h1{
+        margin-left: 10%;
     }
     .default{
         display: none;
@@ -153,7 +157,10 @@ footer{
 @media only screen and (max-width: 575px){
     main{
         flex-direction: column;
-        min-height: 100vh;
+        
+    }
+    h1{
+        margin-left: 20%;
     }
     .encriptador {
         width: 90%;
