@@ -23,7 +23,7 @@
     </header>
     <main>
         <section class="encriptador">
-            <textarea name="areaTexto" class="areaTexto" id="areaTexto" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <textarea name="areaTexto" class="areaTexto" id="areaTexto" cols="30" rows="10" placeholder="Ingrese el texto aqui" onkeypress="return ((event.charCode >= 97 && event.charCode <= 122)||(event.charCode==32))"></textarea>
             
             <p><i class="fa-solid fa-circle-exclamation"></i> Solo letras en minuscula y sin acento</p>
             <div class="boton">
